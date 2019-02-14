@@ -25,6 +25,10 @@ h1{
 h2{
   color: rgb(29, 175, 168);
   font-weight: bold;}
+h3{
+    color: rgb(29, 175, 168);
+    font-weight: bold;
+    align:center;}
 
 .container {
   padding: 5px;
