@@ -45,3 +45,25 @@ div {
   padding: 10px;
   margin: 10px;
 }
+
+.comparison-container {
+  float: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+article {
+  background-color: white; 
+  padding: 30px;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    background-color: rgb(29, 175, 168);
+  }
+
+
+.summary {
+  height: 85%;
+}
