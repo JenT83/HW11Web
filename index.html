@@ -10,29 +10,42 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="Normalize.css">
   <!-- https://getbootstrap.com/docs/3.4/css/ suggests using the above normalize file -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 
-  <nav class = "navbar navbar-default">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class = "sr-only">Toggle navigation</span>
-          <span class = "icon-bar"></span>
-          <span class = "icon-bar"></span>
-          <span class = "icon-bar"></span>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
-        <a class = "navbar-brand" href="https://jent83.github.io/HW11Web/">Latitude</a>
+        <a class="navbar-brand" href="https://jent83.github.io/HW11Web/">Latitude</a>
       </div>
-        
+
       <!-- Dropdown menu -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">Plots <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="https://jent83.github.io/HW11Web/maxtemp">Max Temperature</a></li>
               <li><a href="https://jent83.github.io/HW11Web/humidity">Humidity</a></li>
@@ -43,36 +56,41 @@
           <li><a href="https://jent83.github.io/HW11Web/Comparison">Comparison</a></li>
           <li><a href="https://jent83.github.io/HW11Web/Data">Data</a></li>
         </ul>
-       </div>
-     </div>
-   </nav>
-  
-  
-</head>
+      </div>
+    </div>
+  </nav>
 
-<body>
+  <div class="container">
+    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 visualization summary">
+      <h1>Summary: Latitude vs. X</h1>
+      <hr>
+      <p><img style="padding: 5 5px; margin: 5px; float: left;"
+          src="https://github.com/JenT83/HW11Web/blob/master/Fig1.png?raw=true" alt="Max Temperature" />
+        <p style="margin-top: 20px;"></p>
+        <br>
 
-  <div class = "container">
-    <div class = "col-xs-12 col-sm-12 col-md-7 col-lg-7 visualization summary">
-    <h1>Summary: Latitude vs. X</h1>
-    <hr>
-    <p><img style="padding: 5 5px; margin: 5px; float: left;" src="https://github.com/JenT83/HW11Web/blob/master/Fig1.png?raw=true" alt="Max Temperature"/>
-    <p style="margin-top: 20px;"></p>
-    <br>
+        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+          accomplish this analysis, we first pulled data from the OpenWeathermap API to assemble a dataset on over 500
+          cities.</p>
+        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors
+          we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data
+          and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and
+          correlations witnessed.</p>
+    </div>
 
-    <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeathermap API to assemble a dataset on over 500 cities.</p>
-    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>  
-  </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 visualization">
+      <h2>Visualizations</h2>
+      <hr>
+      <a href="https://jent83.github.io/HW11Web/maxtemp"><img style="padding:5 5px; margin: 5px; float: left;"
+          src="https://github.com/JenT83/HW11Web/blob/master/Fig1.png?raw=true" alt="Max Temperature" /></a>
+      <a href="https://jent83.github.io/HW11Web/humidity"><img style="padding:5 5px; margin: 5px; float: left;"
+          src="https://github.com/JenT83/HW11Web/blob/master/Fig2.png?raw=true" alt="Humidity" /></a>
+      <a href="https://jent83.github.io/HW11Web/cloudiness"><img style="padding:5 5px; margin: 5px; float: left;"
+          src="https://github.com/JenT83/HW11Web/blob/master/Fig3.png?raw=true" alt="Cloudiness" /></a>
+      <a href="https://jent83.github.io/HW11Web/windspeed"><img style="padding:5 5px; margin:5px; float: left;"
+          src="https://github.com/JenT83/HW11Web/blob/master/Fig4.png?raw=true" alt="Wind Speed" /></a>
+    </div>
 
-  <div class = "col-xs-12 col-sm-12 col-md-4 col-lg-4 visualization">
-    <h2>Visualizations</h2>
-    <hr>
-    <a href="https://jent83.github.io/HW11Web/maxtemp"><img style="padding:5 5px; margin: 5px; float: left;" src="https://github.com/JenT83/HW11Web/blob/master/Fig1.png?raw=true" alt="Max Temperature"/></a>
-    <a href="https://jent83.github.io/HW11Web/humidity"><img style="padding:5 5px; margin: 5px; float: left;" src="https://github.com/JenT83/HW11Web/blob/master/Fig2.png?raw=true" alt="Humidity"/></a>
-    <a href="https://jent83.github.io/HW11Web/cloudiness"><img style="padding:5 5px; margin: 5px; float: left;" src="https://github.com/JenT83/HW11Web/blob/master/Fig3.png?raw=true" alt="Cloudiness"/></a>
-    <a href="https://jent83.github.io/HW11Web/windspeed"><img style="padding:5 5px; margin:5px; float: left;" src="https://github.com/JenT83/HW11Web/blob/master/Fig4.png?raw=true" alt="Wind Speed"/></a>
-  </div>
-  
 </body>
 
 </html>

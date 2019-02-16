@@ -10,71 +10,86 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="Normalize.css">
   <!-- https://getbootstrap.com/docs/3.4/css/ suggests using the above normalize file -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 
-  <nav class = "navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class = "sr-only">Toggle navigation</span>
-            <span class = "icon-bar"></span>
-            <span class = "icon-bar"></span>
-            <span class = "icon-bar"></span>
-          </button>
-          <a class = "navbar-brand" href="https://jent83.github.io/HW11Web/">Latitude</a>
-        </div>
-          
-        <!-- Dropdown menu -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <!-- something here -->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="https://jent83.github.io/HW11Web/maxtemp">Max Temperature</a></li>
-                <li><a href="https://jent83.github.io/HW11Web/humidity">Humidity</a></li>
-                <li><a href="https://jent83.github.io/HW11Web/cloudiness">Cloudiness</a></li>
-                <li><a href="https://jent83.github.io/HW11Web/windspeed">Wind Speed</a></li>
-              </ul>
-              </li>
-              <li><a href="https://jent83.github.io/HW11Web/Comparison">Comparison</a></li>
-              <li><a href="https://jent83.github.io/HW11Web/Data">Data</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  
-  
 </head>
 
 <body>
 
-  <div class = "container">
-    <div class = "col-xs-7 col-sm-7 col-md-7 visualization">
-    <h1>Humidity</h1>
-    <hr>
-    <p><img style="height= 200px; width= 200px; padding: 15px; float: left;" src="https://github.com/JenT83/HW11Web/blob/master/Fig2.png?raw=true" alt="Humidity"/>
-    <p style="margin-top: 20px;"></p>
-    
-    <br>
-    <p>There is no strong correlation between latitude and humidity.</p>
-    <br>  
-    <p>Traditionally, the northern hemisphere is known to be more humid than the southern hemisphere which has larger ocean area. This is supported by the data which shows a concentration of cities in northern hemisphere with humidity between 60-80%. However, it is interesting to note: (1) there is a strong band of cities throughout both hemispheres at 100% humidity, (2) the northern hemisphere has a series of outliers at 0%.</p>  
-  </div>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://jent83.github.io/HW11Web/">Latitude</a>
+      </div>
 
-  <div class = "col-xs-4 col-sm-4 col-md-4 visualization">
-    <h2>Visualizations</h2>
-    <hr>
-    <img style="padding: 5 5px; float: left;" src="https://github.com/JenT83/HW11Web/blob/master/Fig1.png?raw=true" alt="Max Temperature"/>
-    <img style="padding: 5 5px; float: left; border: 1px solid  rgb(29, 175, 168);" src="https://github.com/JenT83/HW11Web/blob/master/Fig2.png?raw=true" alt="Humidity"/>
-    <img style="padding: 5 5px; float: left;" src="https://github.com/JenT83/HW11Web/blob/master/Fig3.png?raw=true" alt="Cloudiness"/>
-    <img style="padding: 5 5px; float: left;" src="https://github.com/JenT83/HW11Web/blob/master/Fig4.png?raw=true" alt="Wind Speed"/>
-  </div>
-  
+      <!-- Dropdown menu -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://jent83.github.io/HW11Web/maxtemp">Max Temperature</a></li>
+              <li><a href="https://jent83.github.io/HW11Web/humidity">Humidity</a></li>
+              <li><a href="https://jent83.github.io/HW11Web/cloudiness">Cloudiness</a></li>
+              <li><a href="https://jent83.github.io/HW11Web/windspeed">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="https://jent83.github.io/HW11Web/Comparison">Comparison</a></li>
+          <li><a href="https://jent83.github.io/HW11Web/Data">Data</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="col-xs-12 col-sm-12 col-md-7 visualization">
+      <h1>Humidity</h1>
+      <hr>
+      <p><img style="height= 200px; width= 200px; padding: 15px; float: left;"
+          src="https://github.com/JenT83/HW11Web/blob/master/Fig2.png?raw=true" alt="Humidity" />
+        <p style="margin-top: 20px;"></p>
+
+        <br>
+        <p>There is no strong correlation between latitude and humidity.</p>
+        <br>
+        <p>Traditionally, the northern hemisphere is known to be more humid than the southern hemisphere which has
+          larger ocean area. This is supported by the data which shows a concentration of cities in northern hemisphere
+          with humidity between 60-80%. However, it is interesting to note: (1) there is a strong band of cities
+          throughout both hemispheres at 100% humidity, (2) the northern hemisphere has a series of outliers at 0%.</p>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 visualization">
+      <h2>Visualizations</h2>
+      <hr>
+      <a href="https://jent83.github.io/HW11Web/maxtemp"><img style="padding:5 5px; margin: 5px; float: left;"
+          src="https://github.com/JenT83/HW11Web/blob/master/Fig1.png?raw=true" alt="Max Temperature" /></a>
+      <a href="https://jent83.github.io/HW11Web/humidity"><img style="padding:5 5px; margin: 5px; float: left; border: 1px solid  rgb(29, 175, 168);"
+          src="https://github.com/JenT83/HW11Web/blob/master/Fig2.png?raw=true" alt="Humidity" /></a>
+      <a href="https://jent83.github.io/HW11Web/cloudiness"><img style="padding:5 5px; margin: 5px; float: left;"
+          src="https://github.com/JenT83/HW11Web/blob/master/Fig3.png?raw=true" alt="Cloudiness" /></a>
+      <a href="https://jent83.github.io/HW11Web/windspeed"><img style="padding:5 5px; margin:5px; float: left;"
+          src="https://github.com/JenT83/HW11Web/blob/master/Fig4.png?raw=true" alt="Wind Speed" /></a>
+    </div>
+
 </body>
 
 </html>

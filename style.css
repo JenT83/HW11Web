@@ -50,6 +50,7 @@ div {
   float: center;
   margin: 0px;
   padding: 0px;
+  text-align: center;
 }
 
 article {
@@ -59,7 +60,7 @@ article {
 }
 
 @media screen and (max-width: 600px) {
-  .navbar {
+  .navbar-header {
     background-color: rgb(29, 175, 168);
   }
 
